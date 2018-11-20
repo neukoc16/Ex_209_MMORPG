@@ -1,7 +1,8 @@
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public abstract class Player {
+public abstract class Player implements Serializable {
 
     private String name;
     private int attack;
@@ -16,8 +17,8 @@ public abstract class Player {
         this.hp = hp;
     }
 
-    public void fight() {
-
+    public void fight(Player one, Player two) {
+        
     }
 
     public void addItem(Item i) {
