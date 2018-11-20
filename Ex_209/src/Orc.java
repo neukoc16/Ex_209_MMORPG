@@ -1,8 +1,11 @@
 
 public class Orc extends Player {
 
-    public Orc(int attack, int defense, int hp) {
-        super(attack, defense, hp);
+    private int attack;
+    private int defense;
+
+    public Orc(String name) {
+        super(name, 5, 10, 100);
     }
 
 }

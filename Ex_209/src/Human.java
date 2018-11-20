@@ -1,8 +1,11 @@
 
 public class Human extends Player {
 
-    public Human(int attack, int defense, int hp) {
-        super(attack, defense, hp);
+    private int attack;
+    private int defense;
+
+    public Human(String name) {
+        super(name, 10, 5, 100);
     }
 
 }

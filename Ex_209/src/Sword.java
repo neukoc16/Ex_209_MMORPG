@@ -1,8 +1,7 @@
 
 public class Sword extends Item {
 
-    public Sword(int deltaAttack, int deltaDefense) {
-        super(deltaAttack, deltaDefense);
+    public Sword() {
+        super(0, 0, null);
     }
-
 }

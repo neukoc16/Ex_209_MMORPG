@@ -1,14 +1,16 @@
 
 import java.util.ArrayList;
 
-public class Player {
+public abstract class Player {
 
+    private String name;
     private int attack;
     private int defense;
     private int hp;
     private ArrayList<Item> items = new ArrayList<>();
 
-    public Player(int attack, int defense, int hp) {
+    public Player(String name, int attack, int defense, int hp) {
+        this.name = name;
         this.attack = attack;
         this.defense = defense;
         this.hp = hp;
@@ -18,11 +20,11 @@ public class Player {
 
     }
 
-    public void addItem() {
-
+    public void addItem(Item i) {
+        items.add(i);
     }
 
-    public void remItem() {
-
+    public void remItem(int idx) {
+        items.remove(idx);
     }
 }

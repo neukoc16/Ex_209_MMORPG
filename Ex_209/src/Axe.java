@@ -1,8 +1,7 @@
 
 public class Axe extends Item {
 
-    public Axe(int deltaAttack, int deltaDefense) {
-        super(deltaAttack, deltaDefense);
+    public Axe() {
+        super(0, 0, null);
     }
-
 }

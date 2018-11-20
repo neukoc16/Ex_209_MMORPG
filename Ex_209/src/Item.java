@@ -1,12 +1,13 @@
 
 public class Item {
 
-    private int deltaAttack;
-    private int deltaDefense;
+    private final int damage;
+    private final int block;
+    private final String type;
 
-    public Item(int deltaAttack, int deltaDefense) {
-        this.deltaAttack = deltaAttack;
-        this.deltaDefense = deltaDefense;
+    public Item(int damage, int block, String type) {
+        this.damage = damage;
+        this.block = block;
+        this.type = type;
     }
-
 }
