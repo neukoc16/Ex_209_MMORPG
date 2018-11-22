@@ -1,6 +1,5 @@
 package BL;
 
-
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -20,11 +19,13 @@ public abstract class Player implements Serializable {
     }
 
     public void fight(Player p) {
-        
+        p.damage();
     }
-    public void damage(){
-        
+
+    public void damage() {
+
     }
+
     public void addItem(Item i) {
         items.add(i);
     }
